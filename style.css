@@ -40,7 +40,7 @@ nav ul{
 }
 .bottom{
     position: sticky;
-    height:90px;
+    height:150px;
     background-color: black;
     bottom: 0;
     color:white;
@@ -48,7 +48,8 @@ nav ul{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-radius:12px;
+    border-radius:10px;
+    width: 100%;
     
 
 }
@@ -65,8 +66,9 @@ nav ul{
       min-height: 75vh;
       background-color: black;
       background-repeat: no-repeat;
-      background-position: right;
-      background-position:bottom;
+      background-position: bottom right;
+      background-size: 75% 100%;
+      
       
       color: white;
       background-image:url('Spotify.jpg');
@@ -79,7 +81,41 @@ nav ul{
 #myprogressBar{
     width:80vw;
     text-align: center;
+    cursor: pointer;
     
 
 }
- 
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color:white;
+    color:black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+.songItem img{
+   width: 75px;
+   margin: 0 23px ; 
+   border-radius: 22px;
+}
+.timeStamp{
+    margin: 0 23px;
+}
+.timeStamp i{
+    cursor: pointer;
+}
+.songItemContainer{
+    margin-top: 34px;
+}
+.songInfo{
+    position: absolute;
+    left:10vw;
+    font-family: 'Varela Round',sans-serifs;
+
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
